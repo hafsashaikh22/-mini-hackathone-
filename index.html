@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+    <!-- <div id="auth_container">
+    <div>
+        <h3>Creat Account</h3>
+        <input type="email"  id="signup_email" placeholder="Email">
+        <input type="password"  id="signup_password" placeholder="Password">
+        <button id="signup_btn">Creat account</button>
+    </div>
+
+
+    <div>
+        <h3>sign in to your account</h3>
+        <input type="email"  id="signin_email" placeholder="Email">
+        <input type="password"  id="signin_password" placeholder="Password">
+        <button id="signin_btn">Sign in</button>
+    </div>
+</div>
+
+
+
+
+<div>
+   <div id="user_container">
+<h1 id="user_email"></h1>
+<button id="logout_btn">logout</button>
+</div>
+</div> -->
+
+
+
+
+
+
+
+    <div id="auth_container">
+        <div class="auth_section">
+            <h3>Create Account</h3>
+            <input type="email" id="signup_email" placeholder="Email">
+            <input type="password" id="signup_password" placeholder="Password">
+            <button id="signup_btn">Create account</button>
+        </div>
+
+        <div class="auth_section">
+            <h3>Sign in to your account</h3>
+            <input type="email" id="signin_email" placeholder="Email">
+            <input type="password" id="signin_password" placeholder="Password">
+            <button id="signin_btn">Sign in</button>
+            <button type="button" id="googleLoginButton" class="btn google-btn">Sign in with Google</button>
+        </div>
+   </div>
+
+    <div id="user_container" style="display: none;">
+        <nav class="navbar">
+            <h1 id="user_email"></h1>
+
+            <button id="logout_btn">Logout</button>
+        </nav>
+        <header>
+            <div class="logo">Coranu</div>
+            <div class="search-bar">
+              <input type="text" placeholder="Search...">
+            </div>
+
+
+
+
+
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button onclick="searchBlogs()">Search</button>
+                <button onclick="showPostForm()">Blog</button>
+              </div>
+              
+              <div id="post-form" style="display: none; padding: 20px; border: 1px solid #ccc; margin-top: 20px;">
+                <h3>Create a New Post</h3>
+                <label for="postTitle">Title:</label><br>
+                <input type="text" id="postTitle" placeholder="Enter post title"><br><br>
+                
+                <label for="postCategory">Category:</label><br>
+                <input type="text" id="postCategory" placeholder="Enter post category (e.g., Technology)"><br><br>
+                
+                <label for="postContent">Content:</label><br>
+                <textarea id="postContent" rows="5" placeholder="Enter post content"></textarea><br><br>
+                
+                <button onclick="addPost()">Submit</button>
+                <button onclick="hidePostForm()">Cancel</button>
+              </div>
+
+
+
+
+
+              
+
+            <button class="login-btn" onclick="login()">LOGIN/REGISTER</button>
+          </header>
+         
+        <header>
+            <h1 class="name">Thoughts, Ideas, and Stories</h1>
+            <p>A space where creativity flows, ideas take shape, and stories come to life.</p>
+          </header>
+          <div class="main">
+            <div class="sidebar">
+              <h3>Blog Topics</h3>
+              <ul>
+                <li>Company</li>
+                <li>Design</li>
+                <li>Technology</li>
+                <li>Crypto</li>
+                <li>AI</li>
+                <li>Work</li>
+              </ul>
+              <h3>Guide and Tools</h3>
+              <ul>
+                <li>Guidelines</li>
+                <li>Mentorship</li>
+                <li>Tutorial</li>
+                <li>Training</li>
+                <li>Career</li>
+                <li>Self Care</li>
+              </ul>
+            </div>
+            <div class="content">
+              <h2 class="blog-container">Trending Topics</h2>
+              <div class="trending-topics">
+                <span>Design Thinking</span>
+                <span>Technology</span>
+                <span>Web3</span>
+                <span>Programming</span>
+                <span>AI</span>
+              </div>
+              <div ></div>
+              <h1 class="blog-container">powerfull trading tools features for  <br>experienced investors</h1>
+              <p class="blog-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptatem quis, quod adipisci fugiat nostrum rerum dolorum esse? <br>Dignissimos quis magnam enim totam error rem nostrum illo deserunt illum. Corrupti, blanditiis.</p>
+            </div>
+          </div>
+          <div class="newsletter">
+            <h3>Stay up to date</h3>
+            <p>Join Our Newsletter</p>
+            <input type="email" placeholder="Enter your email">
+            <button onclick="subscribe()">Submit</button>
+            <p style="font-size: 12px; color: #666;">*You can unsubscribe anytime</p>
+          </div>
+    </div>--
+    
+        <script src="app.js" type="module"></script> 
+        <script src="home.js"></script>
+</body>
+
+</html>
